@@ -1,4 +1,4 @@
-#Fourier Transform
+# Fourier Transform
 
 This is the source code for lab 01 on DPoSaI.
 Transforms are implemented as function templates under different namespaces to
