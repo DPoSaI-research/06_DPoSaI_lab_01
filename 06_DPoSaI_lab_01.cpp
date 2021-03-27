@@ -6,7 +6,7 @@
 typedef double T;
 constexpr double pi = 3.141592653589793238;
 
-constexpr unsigned int sampleNum = 32;
+constexpr unsigned int sampleNum = 16;
 constexpr T stride = pi * 2 / sampleNum;
 constexpr unsigned int deepth = sampleNum;
 
@@ -48,4 +48,16 @@ int main()
 			std::cout << i + 1 << ". " << frequencies[i].real() << " + " << frequencies[i].imag() << "*i" << std::endl;
 		}
 	}
+
+	std::vector<T> testFunctionSamples(sampleNum);
+	double tempFill = 0;
+	for (auto& item : testFunctionSamples) {
+		item = tempFill;
+		tempFill += 1.0;
+	}
+
+	//std::cout << std::endl << "Test samples: " << std::endl;
+	//for (unsigned int i = 0; i < testFunctionSamples.size(); i++) {
+	//	std::cout << i + 1 << ". " << testFunctionSamples[i] << std::endl;
+	//}
 }
